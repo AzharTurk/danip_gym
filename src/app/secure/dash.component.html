@@ -1,0 +1,330 @@
+<div>
+  <h2>Dashboard</h2>
+  <div class="box_one_style">
+  <div class="row">
+    <div class="col-12 col-sm-5">
+      <div class="goal_achi">
+        <h4 class="text-center h4_style">Goal Achievement</h4>
+          <div class="pie_chart">
+            <ngx-charts-pie-chart
+            [view]="[400,200]"
+            [results]="single"
+            [legend]="showLegend"
+            [labels]="showLabels"
+            [doughnut]="doughnut"
+            [gradient]="gradient"
+          >
+          </ngx-charts-pie-chart>
+          </div>
+        </div>
+    </div>
+    <div class="col-12 col-sm-7">
+    <div class="row">
+    <div class="col-12 col-sm-4">
+      <div class="goal_achi">
+        <h4 class="text-center h4_style">Healt Clubs</h4>
+        <table class="table">
+          <tbody>
+            <tr>
+              <th scope="row">New</th>
+              <td class="td_style">03</td>
+            </tr>
+            <tr>
+              <th scope="row">Total</th>
+              <td class="td_style">03</td>
+            </tr>
+          </tbody>
+        </table>
+        </div>
+   </div>
+   <div class="col-12 col-sm-4">
+    <div class="goal_achi">
+      <h4 class="text-center h4_style">Fitness Trainer</h4>
+      <table class="table">
+        <tbody>
+          <tr>
+            <th scope="row">New</th>
+            <td class="td_style">03</td>
+          </tr>
+          <tr>
+            <th scope="row">Total</th>
+            <td class="td_style">03</td>
+          </tr>
+        </tbody>
+      </table>
+      </div>
+   </div>
+   <div class="col-12 col-sm-4">
+    <div class="goal_achi">
+      <h4 class="text-center h4_style">User</h4>
+      <table class="table">
+        <tbody>
+          <tr>
+            <th scope="row">New</th>
+            <td class="td_style">03</td>
+          </tr>
+          <tr>
+            <th scope="row">Total</th>
+            <td class="td_style">03</td>
+          </tr>
+        </tbody>
+      </table>
+      </div>
+   </div>
+  </div>
+</div>
+  </div>
+</div>
+
+
+
+<div class="box_two_style">
+  <div class="row">
+   <div class="col-12 col-sm-3">
+     <div class="section_one">
+      <h4>32000</h4>
+      <p class="p_style">Visits</p>
+      <span>+4.100(+0.50%)</span>
+     </div>
+   </div>
+
+   <div class="col-12 col-sm-3">
+    <div class="section_one">
+      <h4>32000</h4>
+      <p class="p_style">Impressions</p>
+      <span>+4.100(+0.50%)</span>
+     </div>
+  </div>
+
+  <div class="col-12 col-sm-3">
+    <div class="section_one">
+      <h4>32000</h4>
+      <p class="p_style">Conersation</p>
+      <span>+4.100(+0.50%)</span>
+     </div>
+  </div>
+
+  <div class="col-12 col-sm-3">
+    <div class="section_one">
+      <h4>32000</h4>
+      <p class="p_style">Downloads</p>
+      <span>+4.100(+0.50%)</span>
+     </div>
+  </div>
+
+  </div>
+</div>
+</div>
+<!-- <div class="container">
+  <div class="row">
+    <div class="col-6 col-sm-3 border">.col-6 .col-sm-3</div>
+    <div class="col-6 col-sm-3 border">.col-6 .col-sm-3</div>
+
+    <!-- Force next columns to break to new line -->
+    <!-- <div class="w-100"></div>
+
+    <div class="col-6 col-sm-3">.col-6 .col-sm-3</div>
+    <div class="col-6 col-sm-3">.col-6 .col-sm-3</div>
+  </div>
+</div> -->
+
+<div class="box_three_style">
+  <div class="row">
+  <div class="col-12 col-sm-8">
+    <div class="sales_statical">
+      <div class="sales_padding">
+        <h4>Sales Statical Overview</h4>
+        <p>The text generated with this free online</p>
+        <div class="graph">
+          <ngx-charts-bar-vertical
+          [view]="[700,200]"
+
+          [results]="single"
+          [gradient]="gradient"
+          [xAxis]="showXAxis"
+          [yAxis]="showYAxis"
+          [legend]="showLegend"
+          [showXAxisLabel]="showXAxisLabel"
+          [showYAxisLabel]="showYAxisLabel"
+          [xAxisLabel]="xAxisLabel"
+          [yAxisLabel]="yAxisLabel"
+          >
+</ngx-charts-bar-vertical>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="col-12 col-sm-4">
+    <div class="net_overview">
+      <div class="net_padding">
+        <h4>Net Profit Margin</h4>
+        <p>The text generated with this free online</p>
+        <canvas baseChart
+        [type]="'pie'"
+        [datasets]="pieChartDatasets"
+        [labels]="pieChartLabels"
+        [options]="pieChartOptions"
+        [plugins]="pieChartPlugins"
+        [legend]="pieChartLegend">
+      </canvas>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+
+
+<div class="container">
+  <div class="box_4_style">
+  <div class="row">
+    <div class="col-12 col-sm-8">
+      <div class="two_box">
+        <div class="row">
+          <div class="col-12 col-sm-6">
+            <div class="total_rev">
+              <table class="table">
+                <tbody>
+                  <tr>
+                    <th scope="row">Total Reve</th>
+                    <td class="td_style">03</td>
+                  </tr>
+                </tbody>
+              </table>
+              <div class="total_rev_graph">
+                <canvas baseChart
+                [datasets]="radarChartDatasets"
+                [options]="radarChartOptions"
+                [labels]="radarChartLabels"
+                [type]="'radar'">
+                </canvas>
+              </div>
+              <h4 class="total_rev_heading">184.2k</h4>
+            </div>
+
+          </div>
+          <div class="col-12 col-sm-6">
+            <div class="total_rev">
+              <table class="table">
+                <tbody>
+                  <tr>
+                    <th scope="row">Total Reve</th>
+                    <td class="td_style">03</td>
+                  </tr>
+                </tbody>
+              </table>
+              <div class="total_rev_doughnut">
+                <canvas baseChart
+                      [labels]="doughnutChartLabels"
+                      [datasets]="doughnutChartDatasets"
+                      [options]="doughnutChartOptions"
+                      [legend]="true"
+                      [type]="'doughnut'">
+              </canvas>
+              </div>
+              <h4 class="total_rev_heading">184.2k</h4>
+            </div>
+          </div>
+      </div>
+    </div>
+
+    <div class="market_overview">
+     <div class="row">
+      <div class="col-12">
+        <div class="market_content">
+          <h4 class="market_heading">Market Overview</h4>
+          <p>The text generated with this free online</p>
+          <ngx-charts-bar-vertical-2d
+          [view]="[700,300]"
+
+          [results]="multi"
+          [gradient]="gradient"
+          [xAxis]="showXAxis"
+          [yAxis]="showYAxis"
+          [legend]="showLegend"
+          [showXAxisLabel]="showXAxisLabel"
+          [showYAxisLabel]="showYAxisLabel"
+          [xAxisLabel]="xAxisLabel"
+          [yAxisLabel]="yAxisLabel"
+          >
+</ngx-charts-bar-vertical-2d>
+        </div>
+      </div>
+     </div>
+    </div>
+
+    <div class="Invoices">
+      <div class="row">
+        <div class="col-12">
+          <div class="invoice_table">
+            <h4>Invoices</h4>
+            <p>The text generated with this free online</p>
+            <table class="table table-striped">
+              <thead>
+                <tr>
+                  <th scope="col">#</th>
+                  <th scope="col">First</th>
+                  <th scope="col">Last</th>
+                  <th scope="col">Handle</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">1</th>
+                  <td>Mark</td>
+                  <td>Otto</td>
+                  <td>@mdo</td>
+                </tr>
+                <tr>
+                  <th scope="row">2</th>
+                  <td>Jacob</td>
+                  <td>Thornton</td>
+                  <td>@fat</td>
+                </tr>
+                <tr>
+                  <th scope="row">3</th>
+                  <td>Larry</td>
+                  <td>the Bird</td>
+                  <td>@twitter</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+    <div class="col-12 col-sm-4">
+      <div class="website_audience">
+       <p class="">Website Audience</p>
+       <canvas baseChart width="400" height="400"
+       [type]="'line'"
+       [data]="lineChartData"
+       [options]="lineChartOptions"
+       [legend]="lineChartLegend">
+     </canvas>
+      </div>
+
+      <div class="row">
+        <div class="word_selling">
+         <h4 class="">Word Selling</h4>
+         <ngx-charts-pie-chart
+         [view]="[400,200]"
+         [results]="single"
+         [legend]="showLegend"
+         [labels]="showLabels"
+         [doughnut]="doughnut"
+         [gradient]="gradient"
+       >
+       </ngx-charts-pie-chart>
+        </div>
+      </div>
+    </div>
+
+</div>
+</div>
+</div>
+
+

@@ -1,0 +1,32 @@
+.main-header .logo{
+  background-color: #ff5e59!important;
+}
+ .navbar-static-top{
+background-color: #fff!important;
+box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+.search_style{
+ margin-left: 50%;
+}
+.search_style input{
+  margin-top: 10px;
+  width: 20%;
+  height: 30px;
+  border: 1px solid #f5f5f6;
+}
+.navbar .sidebar-toggle{
+  color: #3b3b3b;
+}
+.navbar li a i{
+  color: #3b3b3b;
+}
+
+.navbar-static-top  .sidebar-toggle:hover{
+  background-color: #fff;
+  color: black;
+}
+.logo-lg{
+  position: fixed;
+ margin-left: 40px;
+}

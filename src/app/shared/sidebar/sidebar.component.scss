@@ -1,0 +1,24 @@
+.main-sidebar{
+background-color: #ff5e59;
+}
+.user-panel {
+  position: relative;
+  width: 77%;
+  padding: 7px;
+  overflow: hidden;
+  margin: auto;
+  background-color: #fc706b;
+}
+.main-sidebar .sidebar .sidebar-menu span{
+  color: #fff!important;
+}
+
+.main-sidebar .sidebar .sidebar-menu i {
+ color: #fff!important;
+}
+.sidebar-menu li a:hover{
+  background-color: #cd4c47;
+}
+.main-sidebar{
+  position: fixed;
+}
