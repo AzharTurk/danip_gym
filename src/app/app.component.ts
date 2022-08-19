@@ -1,5 +1,6 @@
 import { Component, OnDestroy, OnInit } from '@angular/core';
 import { Router,NavigationEnd} from '@angular/router';
+import { TranslateService } from '@ngx-translate/core';
 import { Subscription } from 'rxjs';
 import {filter} from 'rxjs/operators'
 
@@ -11,8 +12,11 @@ export class AppComponent implements OnInit,OnDestroy {
   currentRoute:string='';
 
   constructor(
-    private _router:Router
-  ){}
+    private _router:Router, private translateService: TranslateService,
+  ){
+    this.translateService.setDefaultLang('en');
+    this.translateService.addLangs(['en', 'ar']);
+  }
   
   ngOnInit() {
     

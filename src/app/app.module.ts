@@ -21,6 +21,14 @@ import { SecureComponent } from './layouts/secure.component';
 import { PublicModule } from "./public/public.module";
 import { SecureModule } from "./secure/secure.module";
 
+import { TranslateModule, TranslateLoader } from "@ngx-translate/core";
+import { TranslateHttpLoader } from "@ngx-translate/http-loader";
+import { HttpClient, HttpClientModule } from "@angular/common/http";
+
+export function HttpLoaderFactory(http: HttpClient) {
+  return new TranslateHttpLoader(http, "./assets/i18n/", ".json");
+}
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -38,7 +46,15 @@ import { SecureModule } from "./secure/secure.module";
     RecaptchaModule,
     AppRoutingModule,
     PublicModule,
-    SecureModule
+    SecureModule,
+    HttpClientModule,
+    TranslateModule.forRoot({
+      loader: {
+        provide: TranslateLoader,
+        useFactory: HttpLoaderFactory,
+        deps: [HttpClient]
+      }
+    })
   ],
   providers: [
   ],

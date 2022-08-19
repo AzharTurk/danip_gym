@@ -39,7 +39,8 @@ body{
     -moz-transition:-moz-transform .3s ease-in-out,margin .3s ease-in-out;
     -o-transition:-o-transform .3s ease-in-out,margin .3s ease-in-out;
     transition:transform .3s ease-in-out,margin .3s ease-in-out;
-    margin-left:230px;
+    margin-right: 0px;
+    margin-left:0px;
     z-index:820
 }
 .layout-top-nav .content-wrapper,.layout-top-nav .main-footer{
@@ -67,6 +68,7 @@ body{
     min-height:calc(100vh - 101px);
     background-color:#ecf0f5;
     z-index:800
+    margi
 }
 @media (max-width:767px){
     .content-wrapper{
