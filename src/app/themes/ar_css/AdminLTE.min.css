@@ -1,4 +1,4 @@
-/*! * AdminLTE v2.4.18 * * Author: Colorlib * Support: <https://github.com/ColorlibHQ/AdminLTE/issues> * Repository: git://github.com/ColorlibHQ/AdminLTE.git * License: MIT <http://opensource.org/licenses/MIT> */
+/*! * AdminLTE v2.4.18arabicStyle * * Author: Colorlib * Support: <https://github.com/ColorlibHQ/AdminLTE/issues> * Repository: git://github.com/ColorlibHQ/AdminLTE.git * License: MIT <http://opensource.org/licenses/MIT> */
 html,body{
     height:100%
 }
@@ -39,7 +39,8 @@ body{
     -moz-transition:-moz-transform .3s ease-in-out,margin .3s ease-in-out;
     -o-transition:-o-transform .3s ease-in-out,margin .3s ease-in-out;
     transition:transform .3s ease-in-out,margin .3s ease-in-out;
-    margin-left:230px;
+    margin-right: 230px;
+    margin-left: 0px;
     z-index:820
 }
 .layout-top-nav .content-wrapper,.layout-top-nav .main-footer{
@@ -382,7 +383,7 @@ a:hover,a:active,a:focus{
 .main-sidebar{
     position:absolute;
     top:0;
-    left:0;
+    right:0;
     padding-top:50px;
     min-height:100%;
     width:230px;

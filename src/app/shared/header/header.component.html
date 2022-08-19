@@ -13,6 +13,10 @@
       <span class="sr-only">Toggle navigation</span>
     </a>
     <span class="search_style"><input id="title" type="text" placeholder="Search Here"/></span>
+    <select #lang (change)="changeLangage(lang.value)">
+      <option value="en">English</option>
+      <option value="ar">Arbic</option>
+    </select>
     <div class="navbar-custom-menu">
       <ul class="nav navbar-nav">
         <!-- Messages: style can be found in dropdown.less-->
