@@ -11,7 +11,7 @@ import { TableComponent } from './table/table.component';
 import { NgxChartsModule }from '@swimlane/ngx-charts';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NgChartsModule } from 'ng2-charts';
-
+import { MaterialModule } from '../shared/Material/material/material.module';
 
 @NgModule({
   declarations: [
@@ -26,9 +26,8 @@ import { NgChartsModule } from 'ng2-charts';
     NotificationsModule,
     BrowserAnimationsModule,
     NgxChartsModule,
-    NgChartsModule
-
-
+    NgChartsModule,
+    MaterialModule
   ],
 })
 export class SecureModule { }

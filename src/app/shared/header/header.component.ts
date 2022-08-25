@@ -11,9 +11,9 @@ export class HeaderComponent implements OnInit {
     @Inject(DOCUMENT) private document: Document
   ) {
     this.translateService.setDefaultLang('en');
-    this.translateService.addLangs(['en', 'ar']);
+    //  this.translateService.addLangs(['en', 'ar']);
   }
- 
+
   ngOnInit(): void {
 
   }
@@ -28,7 +28,7 @@ export class HeaderComponent implements OnInit {
   }
 
   changeCssFile(lang: string) {
-    
+
     let headTag = this.document.getElementsByTagName(
       "head"
     )[0] as HTMLHeadElement;
@@ -36,7 +36,7 @@ export class HeaderComponent implements OnInit {
       "langCss"
     ) as HTMLLinkElement;
 
-    let bundleName = (lang === "ar" ? "src/app/themes/ar_css/AdminLTE.min.css" : "src/app/themes/en_css/AdminLTE.min.css");
+    let bundleName = (lang === "ar" ? "arabicStyle.css" : "englishStyle.css");
 
     if (existingLink) {
       existingLink.href = bundleName;

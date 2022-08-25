@@ -113,7 +113,8 @@ body{
     margin-right:auto;
     margin-left:auto;
     padding-left:15px;
-    padding-right:15px
+    padding-right:15px;
+    margin-top: 25px;
 }
 h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6{
     font-family:'Source Sans Pro',sans-serif
@@ -141,11 +142,12 @@ a:hover,a:active,a:focus{
     z-index:1030
 }
 .main-header .navbar{
-    -webkit-transition:margin-left .3s ease-in-out;
-    -o-transition:margin-left .3s ease-in-out;
-    transition:margin-left .3s ease-in-out;
+    -webkit-transition:margin-right .3s ease-in-out;
+    -o-transition:margin-right .3s ease-in-out;
+    transition:margin-right .3s ease-in-out;
     margin-bottom:0;
-    margin-left:230px;
+    margin-right:230px;
+    margin-left: 0px;
     border:none;
     min-height:50px;
     border-radius:0
@@ -172,7 +174,7 @@ a:hover,a:active,a:focus{
     color:#ccc
 }
 .main-header .navbar-custom-menu,.main-header .navbar-right{
-    float:right
+    float:left
 }
 @media (max-width:991px){
     .main-header .navbar-custom-menu a,.main-header .navbar-right a{
@@ -193,7 +195,7 @@ a:hover,a:active,a:focus{
     }
 }
 .main-header .sidebar-toggle{
-    float:left;
+    float:right;
     background-color:transparent;
     background-image:none;
     padding:15px 15px;
@@ -235,7 +237,7 @@ a:hover,a:active,a:focus{
     -o-transition:width .3s ease-in-out;
     transition:width .3s ease-in-out;
     display:block;
-    float:left;
+    float:right;
     height:50px;
     font-size:20px;
     line-height:50px;
@@ -518,7 +520,8 @@ a:hover,a:active,a:focus{
 }
 @media (min-width:768px){
     .sidebar-mini.sidebar-collapse .content-wrapper,.sidebar-mini.sidebar-collapse .right-side,.sidebar-mini.sidebar-collapse .main-footer{
-        margin-left:50px !important;
+      margin-right: 50px !important;
+      margin-left: 0px!important;
         z-index:840
     }
     .sidebar-mini.sidebar-collapse .main-sidebar{
@@ -563,7 +566,8 @@ a:hover,a:active,a:focus{
         display:none
     }
     .sidebar-mini.sidebar-collapse .main-header .navbar{
-        margin-left:50px
+        margin-right: 50px;
+        margin-left: 0px;
     }
 }
 @media (min-width:768px){

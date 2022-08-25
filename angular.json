@@ -19,7 +19,7 @@
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
-          
+
           "options": {
             "outputPath": "dist/angular-recaptcha-v2",
             "index": "src/index.html",
@@ -33,17 +33,19 @@
               "src/web.config"
             ],
             "styles": [
+              "./node_modules/@angular/material/prebuilt-themes/indigo-pink.css",
               "src/styles.scss",
               {
-                "input": "src/app/themes/en_css/AdminLTE.min.css",
+                "input": "src/app/themes/ar_css/AdminLTE.min.css",
                 "bundleName": "arabicStyle"
-                
+
               },
               {
-                "input": "src/app/themes/ar_css/AdminLTE.min.css",
+                "input": "src/app/themes/en_css/AdminLTE.min.css",
                 "bundleName": "englishStyle"
-                
+
               }
+
             ],
             "scripts": [
               "node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"
@@ -55,7 +57,7 @@
                 {
                   "type": "initial",
                   "maximumWarning": "500kb",
-                  "maximumError": "1mb"
+                  "maximumError": "5mb"
                 },
                 {
                   "type": "anyComponentStyle",
@@ -121,6 +123,7 @@
               "src/assets"
             ],
             "styles": [
+              "./node_modules/@angular/material/prebuilt-themes/indigo-pink.css",
               "src/styles.scss"
             ],
             "scripts": []
